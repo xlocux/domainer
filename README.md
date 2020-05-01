@@ -1,6 +1,8 @@
 # Domainers
 Simple domain checker via https://domainr.com/
 
+![Image description](https://raw.githubusercontent.com/xlocux/domainer/master/domainer.png)
+
 -----------------------------------------------------------------------
 
 ## Installation:
@@ -31,4 +33,4 @@ optional arguments:
 
   ------------------------------------------------------------------------
   
-![Image description](https://raw.githubusercontent.com/xlocux/domainer/master/domainer.png)
+
