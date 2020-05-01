@@ -18,7 +18,7 @@ $ pip install -r requirements.txt
 
 ## Usage:
 
-usage: domainer.py [-h] [-d DOMAIN] [-l LIST] [-x EX]
+usage: domainer.py [-h] [-d DOMAIN] [-l LIST] [-x EX] [-a]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -28,7 +28,10 @@ optional arguments:
                         
   -l LIST, --list LIST  Input domains.txt
   
-  -x EX, --ex EX        load excluded domains list
+  -x EX, --ex EX        Use excluded domains list
+  
+  -a, --append          Append Taken domain to exclusions.dat
+
 
 
   ------------------------------------------------------------------------
