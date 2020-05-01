@@ -1,5 +1,5 @@
 # Domainers
-Simple domain checker via https://domainr.com/
+Simple domain checker via domainr.com
 
 ![Image description](https://raw.githubusercontent.com/xlocux/domainer/master/domainer.png)
 
