@@ -1,4 +1,4 @@
-# Domains
+# Domainers
 Simple domain checker via https://domainr.com/
 
 -----------------------------------------------------------------------
