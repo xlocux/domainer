@@ -39,20 +39,21 @@ def check_domain(domain):
 
 		res = str(soup.find("div", { "class" : "domain-status" }))
 		if "Available" not in res: 
-			print(domain + Fore.RED  +  ' --> Taken')
+			print(domain + Fore.RED  +  ' --> Taken',Style.RESET_ALL)
 			if args.append == True:
 				f = open('exclusions.dat', 'a') 
 				f.write(domain + '\n')
 				f.close()
 				domain_excluded.append(domain)
 		elif "Taken" not in res:
-		  print(domain + Fore.BLUE  + ' --> Available')
+		  print(domain + Fore.BLUE  + ' --> Available',Style.RESET_ALL)
 		else:
 		  print ('Something goes wrong *-*')
+	except KeyboardInterrupt:
+		sys.exit()
 	except:
 		pass
-
-
+    
 if args.domain:
 	check_domain(args.domain)
 	print(Style.RESET_ALL)
@@ -69,14 +70,11 @@ if args.list:
 		for d in domains:
 			if d not in ex:
 				check_domain(d)
-				print(Style.RESET_ALL)
 		
 		if not	domain_excluded:
-			print(Fore.GREEN +'All the domains were checked!')
-			print(Style.RESET_ALL)
+			print(Fore.GREEN +'All the domains were checked!',Style.RESET_ALL)
 		else:
-			print(Fore.YELLOW + 'The following domains are been added to the exlucions list:')
-			print(Style.RESET_ALL)
+			print(Fore.YELLOW + 'The following domains are been added to the exlucions list:',Style.RESET_ALL)
 			for x in domain_excluded:
 				print(x)		
 
